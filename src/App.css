@@ -1,0 +1,55 @@
+/* Wanted to do just enough styling to show competency. Tied more to function than form */
+
+body {
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: gray;
+}
+
+.parent {
+    padding: 20px 60px;
+    background-color: white;
+    border: solid 1px #555;
+    box-shadow: 10px 10px 5px  rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px 5px  rgba(0,0,0,0.6);
+     -webkit-box-shadow: 10px 10px 5px  rgba(0,0,0,0.6);
+    -o-box-shadow: 10px 10px 5px  rgba(0,0,0,0.6);
+    border-radius: 16px;
+
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+}
+
+.choosePassword {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+input {
+    font-size: 24px;
+    margin-bottom: 12px;
+    /* border-color: gray; */
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+.submitParent {
+    display: grid;
+    justify-content: flex-end;
+    grid-auto-flow: column;
+}
+
+.feedbackSuccess {
+    color: green;
+}
+
+.feedbackMatchFailure, .feedbackRequirementsFailure {
+    color: red;
+}
